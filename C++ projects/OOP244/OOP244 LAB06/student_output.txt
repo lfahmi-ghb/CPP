@@ -1,0 +1,82 @@
+Script started on Wed 04 Mar 2020 11:39:44 PM EST
+==5346== Memcheck, a memory error detector
+==5346== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5346== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==5346== Command: ws
+==5346== 
+[38;5;9mBegin Testing the Program!
+--------------------------[0m
+
+---------------------------------------------
+**** Basket default constructor ****
+The Basket has not yet been filled
+---------------------------------------------
+**** Checking Input Validity (invalid) ****
+The Basket has not yet been filled
+The Basket has not yet been filled
+The Basket has not yet been filled
+---------------------------------------------
+**** Checking Input Validity (valid) ****
+Basket Details
+Name: apple
+Quantity: 12
+Price: 20.50
+---------------------------------------------
+Basket Details
+Name: banana
+Quantity: 14
+Price: 10.50
+---------------------------------------------
+Basket Details
+Name: pears
+Quantity: 10
+Price: 12.50
+---------------------------------------------
+**** Validating copy constructor ****
+A new basket of banana is created
+Basket Details
+Name: banana
+Quantity: 14
+Price: 10.50
+---------------------------------------------
+Basket Details
+Name: banana
+Quantity: 14
+Price: 10.50
+---------------------------------------------
+**** Checking copy assignment operator ****
+Basket Details
+Name: pears
+Quantity: 10
+Price: 12.50
+---------------------------------------------
+Basket Details
+Name: pears
+Quantity: 10
+Price: 12.50
+---------------------------------------------
+**** Basket comparing original and copy ****
+Both baskets are carrying the same fruits
+---------------------------------------------
+Basket increasing the price of original
+Basket Details
+Name: pears
+Quantity: 10
+Price: 13.50
+------------------------------------------------------------------
+**** Basket comparing after increasing the price and quantity ****
+Baskets are not same
+
+[38;5;9m------------------------
+End Testing the Program![0m
+==5346== 
+==5346== HEAP SUMMARY:
+==5346==     in use at exit: 0 bytes in 0 blocks
+==5346==   total heap usage: 7 allocs, 7 frees, 45 bytes allocated
+==5346== 
+==5346== All heap blocks were freed -- no leaks are possible
+==5346== 
+==5346== For counts of detected and suppressed errors, rerun with: -v
+==5346== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Wed 04 Mar 2020 11:39:44 PM EST
